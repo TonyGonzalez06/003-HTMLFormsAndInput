@@ -1,0 +1,136 @@
+<!DOCTYPE html> <!-- Defines the document type and version of HTML -->
+<html> <!-- Starts the HTML document -->
+<head> <!-- Contains metadata/information about the document -->
+    <title>TITULO EN GRANDE</title> <!-- Sets the title of the page (appears on browser tab) -->
+</head>
+<body> <!-- Contains all the visible content of the web page -->
+
+    <!-- Main Headings -->
+    <h1>This is an H1 Heading</h1> <!-- Defines the largest heading -->
+    <h2>This is an H2 Heading</h2> <!-- Defines a second level heading -->
+    <h3>This is an H3 Heading</h3> <!-- Defines a third level heading -->
+    <h4>This is an H4 Heading</h4> <!-- Defines a fourth level heading -->
+    <h5>This is an H5 Heading</h5> <!-- Defines a fifth level heading -->
+    <h6>This is an H6 Heading</h6> <!-- Defines the smallest heading -->
+
+    <!-- Paragraph -->
+    <p>No se que poner aqui la verdad.</p> <!-- Defines a block of paragraph text -->
+
+    <!-- Line Break -->
+    <p>This is a line with a break<br>and this is after the break.</p> <!-- Inserts a single line break -->
+
+    <!-- Horizontal Rule -->
+    <hr> <!-- Adds a horizontal line, usually to separate content -->
+
+    <!-- Another Paragraph -->
+    <p>Otro parrafo despues de la linea .</p>
+
+    <!-- HTML Comment -->
+    <!-- This is a comment and will not be displayed on the web page -->
+
+    <!-- Inline & Text Formatting Elements -->
+    <p>The <abbr title="United Nations">UN</abbr> was established in 1945.</p> <!-- Abbreviation -->
+    <address>Written by Jane Doe. Email: jane@example.com</address> <!-- Contact information -->
+    <p>This is <b>bold</b> text.</p> <!-- Bold text -->
+    <p>User: <bdi>TonyG</bdi></p> <!-- Isolates text direction -->
+    <p><bdo dir="rtl">Right-to-left text.</bdo></p> <!-- Overrides text direction -->
+    <p><big>This is big text (obsolete)</big></p> <!-- Obsolete: Use CSS -->
+    <blockquote cite="https://example.com">This is a blockquote.</blockquote> <!-- Long quotation -->
+    <center>Centered text (obsolete)</center> <!-- Obsolete -->
+    <p><cite>Hamlet</cite> by Shakespeare</p> <!-- Title of work -->
+    <p><code>print("Hello")</code></p> <!-- Inline code -->
+    <p>This is <del>deleted</del> text.</p> <!-- Deleted text -->
+    <p><dfn>HTML</dfn> is a markup language.</p> <!-- Defining a term -->
+    <p><em>Emphasized</em> text.</p> <!-- Emphasized text -->
+    <font color="blue">Obsolete font tag</font> <!-- Obsolete -->
+    <p>This is <i>italic</i> text.</p> <!-- Alternate mood -->
+    <p><ins>Inserted</ins> text.</p> <!-- Inserted content -->
+    <p>Use <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy.</p> <!-- Keyboard input -->
+    <p><mark>Highlighted</mark> text.</p> <!-- Highlighted text -->
+    <p><meter value="0.6">60%</meter></p> <!-- Gauge -->
+    <pre>Preformatted     text</pre> <!-- Preserved formatting -->
+    <p><label for="progress">Progress:</label>
+    <progress id="progress" value="50" max="100">50%</progress></p> <!-- Progress bar -->
+    <p><q>Short quotation</q></p> <!-- Short quote -->
+    <ruby>語 <rt>ご</rt></ruby> <!-- Ruby annotation -->
+    <ruby>漢 <rp>(</rp><rt>hàn</rt><rp>)</rp></ruby> <!-- Ruby fallback -->
+    <p><s>Struck-through</s> text.</p> <!-- No longer valid -->
+    <p><samp>Hola mundo!</samp></p> <!-- Sample output -->
+    <p><small>Texto pequeno.</small></p> <!-- Smaller text -->
+    <strike>Strike-through (obsolete)</strike> <!-- Obsolete -->
+    <p><strong>Important</strong> text.</p> <!-- Important text -->
+    <p>H<sub>2</sub>O and 10<sup>2</sup></p> <!-- Subscript and superscript -->
+    <template><p>This is hidden template content.</p></template> <!-- Hidden template -->
+    <p><time datetime="2025-06-25T20:00">8:00 PM</time></p> <!-- Time/date -->
+    <tt>Teletype text (obsolete)</tt> <!-- Obsolete -->
+    <p>This is <u>underlined</u> text.</p> <!-- Underlined text -->
+    <p><var>x</var> = 10</p> <!-- Variable name -->
+    <p>super<wbr>califragilistic<wbr>expialidocious</p> <!-- Line break opportunity -->
+
+    <!-- Form Elements -->
+    <form> <!-- Defines a user input form -->
+
+        <!-- Label and Input -->
+        <label for="username">Username:</label> <!-- Defines label for input -->
+        <input type="text" id="username" name="username"> <!-- Text input field -->
+
+        <br><br>
+
+        <!-- Textarea -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="30"></textarea> <!-- Multiline text area -->
+
+        <br><br>
+
+        <!-- Button -->
+        <button type="submit">Submit</button> <!-- Clickable button -->
+
+        <br><br>
+
+        <!-- Select with Options and Option Group -->
+        <label for="car">Choose a car:</label>
+        <select id="car" name="car"> <!-- Drop-down list -->
+            <optgroup label="Japanese Cars"> <!-- Grouping options -->
+                <option value="toyota">Toyota</option> <!-- Single option -->
+                <option value="honda">Honda</option>
+            </optgroup>
+            <optgroup label="German Cars">
+                <option value="bmw">BMW</option>
+                <option value="audi">Audi</option>
+            </optgroup>
+        </select>
+
+        <br><br>
+
+        <!-- Datalist with Input -->
+        <label for="browser">Choose your browser:</label>
+        <input list="browsers" name="browser" id="browser"> <!-- Input with suggestions -->
+        <datalist id="browsers"> <!-- List of predefined options -->
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Edge">
+            <option value="Safari">
+        </datalist>
+
+        <br><br>
+
+        <!-- Fieldset and Legend -->
+        <fieldset> <!-- Groups related form elements -->
+            <legend>Account Type</legend> <!-- Title for fieldset group -->
+            <input type="radio" id="personal" name="type" value="personal">
+            <label for="personal">Personal</label>
+            <input type="radio" id="business" name="type" value="business">
+            <label for="business">Business</label>
+        </fieldset>
+
+        <br><br>
+
+        <!-- Output (for JavaScript calculations) -->
+        <label for="range">Select a number: </label>
+        <input type="range" id="range" name="range" oninput="result.value = range.value">
+        <output name="result" for="range">50</output> <!-- Shows dynamic result -->
+
+    </form>
+
+</body>
+</html> <!-- Ends the HTML document -->
